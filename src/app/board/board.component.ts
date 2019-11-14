@@ -1,9 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-board",
-  templateUrl: "./board.component.html",
-  styleUrls: ["./board.component.scss"]
+  selector: 'app-board',
+  templateUrl: './board.component.html',
+  styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
   squares: string[];
@@ -23,7 +23,7 @@ export class BoardComponent implements OnInit {
   }
 
   get player() {
-    return this.xIsNext ? "X" : "O";
+    return this.xIsNext ? 'X' : 'O';
   }
 
   makeMove(idx: number) {
